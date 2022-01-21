@@ -1,0 +1,94 @@
+/*
+//Zadanie 1
+
+#include <iostream>
+#include <time.h>
+using namespace std;
+float pole(float r);
+float pole(float a, float b);
+float poletrojkata(float a, float b);
+void szescian(float a);
+void walec(float, float);
+
+int main()
+{
+    float r, a, b, h;
+    cout << "podaj a =", cin >> a;
+    cout << "podaj b =", cin >> b;
+    cout << "podaj h =", cin >> h;
+    cout << "podaj r =", cin >> r;
+       
+    if (a > 0 && b > 0 && h > 0 && r > 0) {
+        cout << "Pole kola: "<< pole(r) << endl;
+        cout << "Pole prostokata: " << pole(a,b) << endl;
+        cout << "Pole trojkata: " << pole(a,h) << endl;
+        cout <<""<<endl;
+        cout << "Szescian: \n" << endl;
+        szescian(a);
+        cout << "Walec: \n" << endl;
+        walec(r, h), cout << endl;
+    }
+    else cout << "Podane nieprawidlowe dane!";
+
+}
+
+    float pole(float r) {
+        return 3.14 * r * r;
+    }
+    float pole(float a, float b) {
+        return a*b;
+    }
+    float poletrojkata(float a, float h) {
+        return (a*h)/2;
+    }
+    void szescian(float a) {
+        cout << "Pole = " << 6 * a * a;
+        cout << "\nObjetosc = " << a * a * a<< endl;
+        cout <<""<<endl;
+    }
+    void walec(float r, float h) {
+        cout << "Pole = " << 2*3.14*r*(r+h);
+        cout << "\nObjetosc = " << 3.14 *r *h;
+    }
+*/
+
+
+
+
+
+/*
+//Zadanie 3
+
+#include <iostream>
+using namespace std;
+
+void zamiana(int liczba)
+{
+    int i = 0, tab[128];
+
+    while (liczba)
+    {
+        tab[i++] = liczba % 2;
+        liczba /= 2;
+    }
+
+    for (int j = i - 1; j >= 0; j--)
+        cout << tab[j];
+}
+
+int main()
+{
+    int liczba;
+
+    cout << "Podaj liczbe: ";
+    cin >> liczba;
+
+    cout << liczba << " postac binarna: ";
+    zamiana(liczba);
+    cout << endl;
+
+    return 0;
+}
+*/
+
+
